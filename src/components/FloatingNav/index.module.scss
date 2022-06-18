@@ -29,10 +29,12 @@
     -o-border-radius: 10px;
     background-color: rgba(199, 194, 194, 0.8);
     @extend.center;
-    a
+    button
 {
         color: black;
-        text-decoration: none;
+        outline: none;
+        border: 0;
+        background-color: transparent;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         transition: 200ms ease-in-out;
         -webkit-transition: 200ms ease-in-out;
@@ -48,7 +50,12 @@
             color: white;
         }
     }
+    a{
+        @extend button;
+
+    }
 }
+
 @keyframes popup {
     0%{
         opacity: 0;

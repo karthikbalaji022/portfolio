@@ -3,7 +3,7 @@ import style from "./index.module.scss";
 import TypeWriterEffect from "react-typewriter-effect";
 import data from "../../assets/data/carddata";
 import Typewriter from "../TypeWriterCard/Typewriter";
-function About() {
+const About=React.forwardRef(({},ref)=> {
     const [card,setCard]=useState({card1:false,card2:false,card3:false,card4:false});
     const revealBox={
         display:"flex",
@@ -24,8 +24,9 @@ function About() {
         color:"white",
         margin:"10px",
     };
+
   return (
-    <div id="about" className={style.aboutContainer}>
+    <div id="about" className={style.aboutContainer} ref={ref}>
       <h1>About Me</h1>
       <div className={style.aboutFlex}>
         <section className={style.typewriter}>
@@ -175,6 +176,6 @@ function About() {
       </div>
     </div>
   );
-}
+})
 
 export default About;

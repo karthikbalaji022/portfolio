@@ -1,0 +1,16 @@
+.workWrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+
+}
+.workContainer{
+    width: 100%;
+    min-height: 100vh;
+    h1{
+        color: white;
+    }
+}
