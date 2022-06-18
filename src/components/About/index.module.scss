@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+font-family: 'PT Sans Narrow', sans-serif;
+}
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  color: white;
+  padding: 40px 50px;
+  .aboutFlex {
+    border: 1px solid white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .typewriter {
+      width: 100%;
+      height: 100px;
+      background-color:#171717;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .aboutCards {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .aboutCard{
+        overflow: hidden;
+        box-shadow: 0 0 5px 2px rgba(238, 229, 229,.1);
+        width:200px;
+        height:350px;
+        padding: 10px;
+        font-size: 19px;
+        text-align:left;
+        // font-family:sans-serif;
+        background-color: rgba(202, 191, 191, 0.1);
+        position: relative;
+        
+
+        &:hover{
+          transform: rotateZ(10deg) ;
+          -webkit-transform: rotateZ(10deg) ;
+          -moz-transform: rotateZ(10deg) ;
+          -ms-transform: rotateZ(10deg) ;
+          -o-transform: rotateZ(10deg) ;
+        }
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    }
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+}
+
+@media (max-width:600px) {
+  .aboutCards{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    row-gap: 30px;
+    
+  }
+
+
+  
+}
