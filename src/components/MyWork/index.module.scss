@@ -12,5 +12,15 @@
     min-height: 100vh;
     h1{
         color: white;
+        margin-bottom: 30px;
     }
+}
+.workcardContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:80px;
+    padding: 20px;
+    justify-content: space-around;
 }

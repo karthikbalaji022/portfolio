@@ -13,7 +13,6 @@ function App() {
   const about=useRef();
   const mywork=useRef();
   const contact=useRef();
-  const [scroll,setScroll]=useState({home:home});
   const [width,setWidth]=useState(window.innerWidth);
   return (
     <globalWidth.Provider value={setWidth}>
