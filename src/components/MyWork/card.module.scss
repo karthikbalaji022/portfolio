@@ -17,14 +17,12 @@
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   &:hover>.front{
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    
-}
-
+ transform: rotateY(180deg);
+ -webkit-transform: rotateY(180deg);
+ -moz-transform: rotateY(180deg);
+ -ms-transform: rotateY(180deg);
+ -o-transform: rotateY(180deg);
+  }
 }
 .front {
     position: absolute;
@@ -123,6 +121,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
     .github,
     .website {
       background-color: #171717;
@@ -130,8 +129,9 @@
       border: 0;
       color: white;
       font-size: 1rem;
-      width: 80px;
-      height: 40px;
+      width: max-content;
+      height: max-content;
+      padding: 10px;
       font-weight: 500;
       border-radius: 5px;
       -webkit-border-radius: 5px;

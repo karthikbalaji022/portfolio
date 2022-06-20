@@ -10,7 +10,7 @@ const Mywork =React.forwardRef(({},ref) =>{
         <section className={style.workcardContainer}>
           {workData.map((item,i)=>{
             return(
-            <Myworkcard key={i} card={item} />
+            <Myworkcard ind={i} card={item} />
             )
           })}
         </section>

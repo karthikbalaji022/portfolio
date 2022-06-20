@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './card.module.scss';
-function Myworkcard({key,card}) {
+function Myworkcard({ind,card}) {
   return (
-    <div className={style.workcard} key={key}>
+    <div className={style.workcard} key={ind}>
         <div className={style.front}>
             <div className={style.imgContainer}>
 
@@ -26,7 +26,7 @@ function Myworkcard({key,card}) {
                 <div className={style.btns}>
 
                 <a href={card.github} target="_blank">
-                <button className={style.github}>GitHub</button>
+                <button className={style.github}>{ind==0?"Leetcode profile":"GitHub"}</button>
                 </a>
                 {card.deployed==true &&
                     (<a href={card.deployLink} target="_blank">

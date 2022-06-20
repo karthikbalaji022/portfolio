@@ -80,7 +80,7 @@ align-items: center;
 }
 .logo1{
     top:50%;
-    left:30%;
+    left:20%;
 }
 
 .logo2{
@@ -108,11 +108,11 @@ align-items: center;
     left:90%;
 }
 .logo7{
-    top:10%;
+    top:7%;
     left:37%;
 }
 .logo8{
-    top:10%;
+    top:7%;
     left:59%;
 }
 .logo9{
@@ -156,8 +156,8 @@ align-items: center;
         -o-transform: scale(0);
 }
 }
-@media (max-width:600px) {
-    .logo,.imageContainer{
+@media (max-width:700px) {
+    .logo{
         display: none;
     }
     

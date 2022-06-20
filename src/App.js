@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
 import Sidebar from './components/sideBar/Sidebar';
 import Mywork from './components/MyWork/Mywork';
+import Contact from './components/Contact/Contact';
 
 export const globalWidth=createContext();
 function App() {
@@ -14,23 +15,22 @@ function App() {
   const mywork=useRef();
   const contact=useRef();
   const [width,setWidth]=useState(window.innerWidth);
+  if(window.innerWidth<=650)
+  {
+    alert("Please use a device with width >600 pixel for better experience")
+  }
   return (
     <globalWidth.Provider value={setWidth}>
 
     <div className="App" ref={home}>
       <Nav/>
       <Sidebar/>
-      {width<1000?
-      (
-        <div style={{color:"white",fontSize:"1.5rem"}}> open in device with width greater than 1000, page is not responsive</div>
-      ):(
-        <>
+
       <Header id="home" />
       <About ref={about}/>
       <Mywork ref={mywork}/>
-        </>
-      )
-    }
+      <Contact ref={contact}/>
+        
     <FloatingNav home={home} about={about} work={mywork} contact={contact}/>
     </div>
     </globalWidth.Provider>

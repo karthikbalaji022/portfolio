@@ -5,9 +5,18 @@ import simon from "../../assets/images/workcard/simon.PNG";
 import todo from "../../assets/images/workcard/todo.PNG";
 import zomato from "../../assets/images/workcard/zomato.png";
 import calculator from "../../assets/images/workcard/calculator.PNG";
+import leetcode from "../../assets/images/workcard/leetcode.PNG";
 
 const carddata=[
     {
+        img:leetcode,
+        title:"Leetcode (Coding profile)",
+        description:"Feel free to check out my dsa and problem solving skills by checking out my coding profile.",
+        techStack:["Linked List","Tree","Graph","Trie","Queue","Stack","Dp","Strings","Recursion"],
+        deployed:false,
+        github:"https://leetcode.com/Karthik_Balaji_V/",
+        deployLink:""
+    },{
         img:portfolio,
         title:"Portfolio",
         description:"This project consists of information about Karthik Balaji and all the projects and work he has done or contributed.",
