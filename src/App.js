@@ -24,7 +24,7 @@ function App() {
     <globalWidth.Provider value={setWidth}>
 
     <div className="App" ref={home}>
-      <Nav home={home} about={about} work={mywork} contact={contact}/>
+      <Nav />
       <Sidebar/>
 
       <Header id="home" />

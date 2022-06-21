@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './index.module.scss'
 import {FaSearch} from 'react-icons/fa'
-function Nav({home,about,work,contact}) {
+function Nav() {
   return (
     <nav className={style.navContainer}>
         <section className={style.logo}>
