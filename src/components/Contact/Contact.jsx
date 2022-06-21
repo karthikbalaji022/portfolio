@@ -1,6 +1,8 @@
 import React,{useRef} from "react";
 import style from "./index.module.scss";
 import { FaSearchLocation, FaEnvelope, FaPhone } from "react-icons/fa";
+import emailjs from 'emailjs-com'
+
 const contact = React.forwardRef(({}, ref) => {
     const name=useRef();
     const email=useRef();
@@ -8,12 +10,14 @@ const contact = React.forwardRef(({}, ref) => {
     const messsage=useRef();
     function handleSubmit(event){
         event.preventDefault();
-        let n=name.current.value;
-        let e=email.current.value;
-        let s=subject.current.value;
-        let m=messsage.current.value;
-        console.log(n,e,s,m);
-    }
+        emailjs.sendForm("service_v2oy53l",process.env.REACT_APP_TEMPLATE_ID,event.target,process.env.REACT_APP_USER_ID)
+        .then((res)=>{
+          alert("Email sent Successfully, Thanks for contacting me");
+        }).catch((err)=>{
+          alert("Something went wrong");
+          console.log(err);
+        })
+      }
   return (
     <div ref={ref} className={style.contactBox}>
       <div className={style.contactContainer}>
@@ -55,19 +59,19 @@ const contact = React.forwardRef(({}, ref) => {
           <form className={style.contactForm} onSubmit={(e)=>{handleSubmit(e)}}>
             <label>
               Name:
-              <input type={"text"} className={style.name} placeholder="name..." ref={name} required/>
+              <input type={"text"} name="from_name" className={style.name} placeholder="name..." ref={name} required/>
             </label>
             <label>
               Email:
-              <input type={"Email"} className={style.mail}placeholder="email.." ref={email} required />
+              <input type={"Email"} name="from_email" className={style.mail}placeholder="email.." ref={email} required />
             </label>
             <label>
               Subject:
-              <input type={"text"} className={style.number} placeholder="subject..." ref={subject} />
+              <input type={"text"} name="subject_mail" className={style.number} placeholder="subject..." ref={subject} />
             </label>
             <label>
               Messsage:
-              <textarea className={style.textbox} ref={messsage}  required></textarea>
+              <textarea className={style.textbox} name="message_mail" ref={messsage}  required></textarea>
             </label>
             <button type="submit" className={style.submit}>
               Submit

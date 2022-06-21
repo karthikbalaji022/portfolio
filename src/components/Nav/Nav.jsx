@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './index.module.scss'
 import {FaSearch} from 'react-icons/fa'
-function Nav() {
+function Nav({home,about,work,contact}) {
   return (
     <nav className={style.navContainer}>
         <section className={style.logo}>
@@ -12,7 +12,7 @@ function Nav() {
        
         <section className={style.search}>
             <FaSearch className={style.searchIcon}/>
-            <input type={"text"} className={style.searchBar} placeholder="search..."/>
+            <input type={"text"} className={style.searchBar} placeholder="search..." />
 
         </section>
     </nav>
