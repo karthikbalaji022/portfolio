@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/karthikbalaji022/portfolio/static/css/main.307dc1a6.css",
-    "main.js": "/karthikbalaji022/portfolio/static/js/main.c12ca599.js",
-    "static/js/787.1ed0c42c.chunk.js": "/karthikbalaji022/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/karthik.jpg": "/karthikbalaji022/portfolio/static/media/karthik.03de7bbbc821bfb6b5b9.jpg",
-    "static/media/planyourday.PNG": "/karthikbalaji022/portfolio/static/media/planyourday.e6d91abcc36c2e32bf2a.PNG",
-    "static/media/todo.PNG": "/karthikbalaji022/portfolio/static/media/todo.5951207b575b06e8b371.PNG",
-    "static/media/portfolio.PNG": "/karthikbalaji022/portfolio/static/media/portfolio.daadab0240befe6c828f.PNG",
-    "static/media/zomato.png": "/karthikbalaji022/portfolio/static/media/zomato.3735ce29d5d45813aa7a.png",
-    "static/media/calculator.PNG": "/karthikbalaji022/portfolio/static/media/calculator.6b7c3aec226b0180ceac.PNG",
-    "static/media/jobs.PNG": "/karthikbalaji022/portfolio/static/media/jobs.d9e87b48bf76cebf66b2.PNG",
-    "static/media/leetcode.PNG": "/karthikbalaji022/portfolio/static/media/leetcode.c8fc6bd82b42db578f7d.PNG",
-    "static/media/simon.PNG": "/karthikbalaji022/portfolio/static/media/simon.7964e19d98fc510c1f3e.PNG",
-    "index.html": "/karthikbalaji022/portfolio/index.html",
-    "main.307dc1a6.css.map": "/karthikbalaji022/portfolio/static/css/main.307dc1a6.css.map",
-    "main.c12ca599.js.map": "/karthikbalaji022/portfolio/static/js/main.c12ca599.js.map",
-    "787.1ed0c42c.chunk.js.map": "/karthikbalaji022/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.307dc1a6.css",
+    "main.js": "/portfolio/static/js/main.0a5bc536.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/karthik.jpg": "/portfolio/static/media/karthik.03de7bbbc821bfb6b5b9.jpg",
+    "static/media/planyourday.PNG": "/portfolio/static/media/planyourday.e6d91abcc36c2e32bf2a.PNG",
+    "static/media/todo.PNG": "/portfolio/static/media/todo.5951207b575b06e8b371.PNG",
+    "static/media/portfolio.PNG": "/portfolio/static/media/portfolio.daadab0240befe6c828f.PNG",
+    "static/media/zomato.png": "/portfolio/static/media/zomato.3735ce29d5d45813aa7a.png",
+    "static/media/calculator.PNG": "/portfolio/static/media/calculator.6b7c3aec226b0180ceac.PNG",
+    "static/media/jobs.PNG": "/portfolio/static/media/jobs.d9e87b48bf76cebf66b2.PNG",
+    "static/media/leetcode.PNG": "/portfolio/static/media/leetcode.c8fc6bd82b42db578f7d.PNG",
+    "static/media/simon.PNG": "/portfolio/static/media/simon.7964e19d98fc510c1f3e.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.307dc1a6.css.map": "/portfolio/static/css/main.307dc1a6.css.map",
+    "main.0a5bc536.js.map": "/portfolio/static/js/main.0a5bc536.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.307dc1a6.css",
-    "static/js/main.c12ca599.js"
+    "static/js/main.0a5bc536.js"
   ]
 }
